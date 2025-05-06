@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/all.min.css" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/my-styles.css" />
+    <title>Document</title>
+  </head>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fa-solid fa-cloud-bolt" style="color: red;"></i> Weather </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">contact</a>
+          </li>
+          
+          
+          
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-5 " >
+    <div class="container">
+      <div class="input-box mt-5">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Enter city name"  id="searchInput">
+          <button class="btn btn-danger px-5" type="button" id="searchBtn" >Search</button>
+        </form>
+      </div>
+      <div class="row" id="row">
+         <div class="col-md-4">
+
+          <div>
+            <div class="weather-card mt-5  p-4 rounded-2 bg-dark-subtle ">
+              <div class="current-day-box d-flex justify-content-between 
+              ">
+                <p id="current-day">thursday</p>
+                <p id="current-date">1 may </p>
+              </div>
+              <div class="weather-info py-4 ">
+                <p id="city-name">cairo</p>
+
+                <h1 id="current-deg " class="fw-bold">15.25 <sup>o</sup>C</h1>
+                <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="" id="conditionImg">
+                <p id="weather-desc" class="text-danger fw-semibold">sunny</p>
+              </div>
+              <div class="weather-details d-flex gap-3">
+                <p><i class="fa-solid fa-umbrella" ></i> <span id="hotnessDeg">20%</span></p>
+                <p><i class="fa-solid fa-wind" ></i> <span>20%</span></p>
+                <p><i class="fa-brands fa-nfc-directional"></i> <span>20%</span></p>
+              </div>
+            </div>
+          </div>
+        </div> 
+        
+
+         
+        
+       
+      </div>
+    </div>
+  </header>
+ 
+
+      <footer class="text-center py-4 ">
+      <p class="copyright">
+        © Copyright <strong>DevFolio</strong>. All Rights Reserved
+      </p>
+      <div class="credits">
+        Designed by
+        <a
+          href="https://bootstrapmade.com/"
+          class="text-white text-decoration-none fw-bold text-uppercase"
+          >salem fareed</a
+        >
+      </div>
+    </footer>  
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
